@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             val todoUrl = etUrl.text.toString()
             val todoPrice = etPrice.text.toString()
             if(todoTitle.isNotEmpty()) {
-                val todo = Todo(todoTitle,false,todoPrice,todoUrl)
+                val todo = Todo(todoTitle,false,"$$todoPrice",todoUrl)
                 todoAdapter.addTodo(todo)
                 etWishTitle.text.clear()
                 etUrl.text.clear()
